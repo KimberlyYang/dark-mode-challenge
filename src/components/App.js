@@ -4,15 +4,15 @@ import ThemeSwitcher from "../partials/ThemeSwitcher";
 export default class App extends React.Component {
 
     render() {
+        const{setTheme, DarkTheme} =this.props;
         return (
             <div className="app">
-
                 <div className="level header">
                     <div className="title-container">
                         <div className="morningscore-avatar"></div>
                         <h1 className="title">Dark Mode Challenge</h1>
                     </div>
-                    <ThemeSwitcher/>
+                    <ThemeSwitcher setTheme={setTheme} DarkTheme={DarkTheme}/>
                 </div>
 
 
